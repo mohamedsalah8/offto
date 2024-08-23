@@ -1,0 +1,15 @@
+{
+  "Buttons": {
+    "packages/HotelCard/changeHotel": "Change Hotel",
+    "packages/HotelCard/changeRoom": "Change room",
+    "packages/HotelCard/showDetails": "Show all details"
+  },
+  "Heads": {
+    "packages/HotelCard/headContent": "Hotel details",
+    "packages/HotelCard/fqaContent": "FQA"
+  },
+  "Text": {
+    "packages/HotelCard/checkContent/in": "Check in",
+    "packages/HotelCard/checkContent/out": "Check out"
+  }
+}

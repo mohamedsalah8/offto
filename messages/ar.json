@@ -1,0 +1,15 @@
+{
+  "Buttons": {
+    "packages/HotelCard/changeHotel": "تغير الفندق",
+    "packages/HotelCard/changeRoom": "تغير الغرفه",
+    "packages/HotelCard/showDetails": "اظهار جميع التفاصيل"
+  },
+  "Heads": {
+    "packages/HotelCard/headContent": "تفاصيل الفندق",
+    "packages/HotelCard/fqaContent": "الاسئله المتداوله"
+  },
+  "Text": {
+    "packages/HotelCard/checkContent/in": "دخول",
+    "packages/HotelCard/checkContent/out": "خروج"
+  }
+}

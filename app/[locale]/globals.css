@@ -1,0 +1,179 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*TODO -------------------------------------------------------------------------- !*/
+/*TODO                           APPLICATION THEM COLORS                           !*/
+/*TODO -------------------------------------------------------------------------- !*/
+:root {
+  --main-color-900: rgba(0, 92, 152, 1);
+  --main-color-800: #2d65a5;
+  --main-color-700: #457ebe98;
+  --main-color-600: #346db40d;
+
+  --primary-color-900: #00b5bc;
+  --primary-color-800: #39e5eb50;
+  --primary-color-700: rgb(56, 185, 99);
+  --primary-color-600: rgba(225, 53, 53, 1);
+  --primary-color-500: rgba(7, 104, 159, 0.05);
+  --primary-color-400: rgba(255, 186, 7, 1);
+
+  --light-color-900: #fff;
+  --light-color-800: rgba(245, 247, 250, 1);
+  --light-color-700: rgba(246, 253, 252, 1);
+  --light-color-600: rgba(255, 253, 247, 1);
+  --light-color-500: #ffffff29;
+  --light-color-400: #ffffff8e;
+
+  --dark-color-900: #000;
+  --dark-color-800: rgba(64, 77, 88, 1);
+  --dark-color-700: #000000ad;
+  --dark-color-600: #222d338e;
+  --dark-color-500: rgba(98, 208, 182, 0.288);
+  --dark-color-400: rgba(159, 166, 171, 1);
+  --dark-color-300: rgba(244, 244, 244, 1);
+  --dark-color-200: rgba(112, 122, 130, 1);
+  --dark-color-100: rgb(206, 233, 235);
+  --dark-color-50: rgba(155, 169, 177, 0.05);
+  --dark-color-40: #e0e0e0;
+
+  --card-color-900: #f5f7fa;
+  --card-color-800: #f6fdfc;
+  --card-color-700: #fffdf7;
+  --card-color-600: #7b397d;
+}
+
+/*TODO -------------------------------------------------------------------------- !*/
+/*TODO                           APPLICATION THEM COLORS                           !*/
+/*TODO -------------------------------------------------------------------------- !*/
+
+/*? -------------------------------------------------------------------------- !*/
+/*?                       OVER WRITE DATE  => Datepicker                       !*/
+/*? -------------------------------------------------------------------------- !*/
+.rdp-day_today {
+  font-weight: bold;
+  font-size: 140%;
+  color: var(--primary-color-900) !important;
+}
+.rdp-day_range_end {
+  background-color: var(--primary-color-900) !important;
+  font-weight: 700 !important;
+}
+.rdp-day_range_start,
+.rdp-day_selected {
+  background-color: var(--primary-color-900) !important;
+  color: var(--light-color-900) !important;
+  font-weight: 700 !important;
+  outline-color: var(--primary-color-900) !important;
+  border-color: var(--primary-color-900) !important;
+}
+.rdp-day_range_middle {
+  background-color: var(--primary-color-900) !important;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+body {
+  overflow-x: hidden;
+}
+
+/*? -------------------------------------------------------------------------- !*/
+/*?                   OVER WRITE Select Options => NextUi                      !*/
+/*? -------------------------------------------------------------------------- !*/
+ul li[data-hover="true"],
+ul li[data-focus="true"] {
+  background-color: var(--dark-color-300) !important;
+}
+
+/*? -------------------------------------------------------------------------- !*/
+/*?                   Header Animation On Scroll                               !*/
+/*? -------------------------------------------------------------------------- !*/
+.header-scroll-animation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  animation: header 0.4s 1 ease forwards;
+}
+.header-scroll-animation-2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  animation: header2 0.4s 1 ease forwards;
+}
+
+@keyframes header {
+  from {
+    top: -400px;
+    transform: scale(0);
+    transform-origin: center;
+  }
+  to {
+    transform: scale(1);
+    transform-origin: top;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  @keyframes header2 {
+    from {
+      top: -400px;
+      transform: scale(0);
+      transform-origin: center;
+    }
+    to {
+      top: 42px;
+      transform: scale(1);
+      transform-origin: top;
+    }
+  }
+}
+@media screen and (min-width: 800px) {
+  @keyframes header2 {
+    from {
+      top: -400px;
+      transform: scale(0);
+      transform-origin: center;
+    }
+    to {
+      top: 0px;
+      transform: scale(1);
+      transform-origin: top;
+    }
+  }
+}
+/*? -------------------------------------------------------------------------- !*/
+/*?                   OVER WRITE Scroll Bar => NextUi                          !*/
+/*? -------------------------------------------------------------------------- !*/
+/* Change the background color of the scrollbar track */
+::-webkit-scrollbar {
+  background-color: var(
+    --main-color-900
+  ); /* Change this to the desired background color */
+}
+
+/* Change the color of the scrollbar thumb (the draggable part) */
+::-webkit-scrollbar-thumb {
+  background-color: var(
+    --primary-color-900
+  ); /* Change this to the desired thumb color */
+}
+
+/* Change the color of the scrollbar arrows (up and down buttons) */
+::-webkit-scrollbar-button {
+  background-color: var(
+    --dark-color-600
+  ); /* Change this to the desired arrow color */
+}
+
+/* Change the color of the scrollbar corner (between the thumb and track) */
+::-webkit-scrollbar-corner {
+  background-color: var(
+    --dark-color-600
+  ); /* Change this to the desired corner color */
+}

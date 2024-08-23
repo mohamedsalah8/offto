@@ -1,0 +1,49 @@
+{
+  "name": "offto-3",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "live": "next build && next start",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@ant-design/react-slick": "^1.0.2",
+    "@hookform/resolvers": "^3.3.2",
+    "@nextui-org/react": "^2.1.13",
+    "@reduxjs/toolkit": "^1.9.7",
+    "@tanstack/react-query": "^5.0.5",
+    "@types/react-google-recaptcha": "^2.1.7",
+    "@types/react-phone-number-input": "^3.0.16",
+    "axios": "^1.6.0",
+    "date-fns": "^2.30.0",
+    "framer-motion": "^10.16.4",
+    "next": "^14.0.0",
+    "next-intl": "^2.21.0",
+    "react": "latest",
+    "react-day-picker": "^8.9.1",
+    "react-dom": "latest",
+    "react-google-recaptcha": "^3.1.0",
+    "react-hook-form": "^7.47.0",
+    "react-icons": "^4.11.0",
+    "react-international-phone": "^4.0.1",
+    "react-redux": "^8.1.3",
+    "sharp": "^0.32.6",
+    "slick-carousel": "^1.8.1",
+    "sweetalert2": "^11.7.32",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "autoprefixer": "latest",
+    "eslint": "latest",
+    "eslint-config-next": "latest",
+    "postcss": "latest",
+    "tailwindcss": "latest",
+    "typescript": "latest"
+  }
+}
